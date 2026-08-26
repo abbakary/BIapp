@@ -53,7 +53,7 @@ export default function App() {
           onOpenBooking={handleOpenBooking}
         />
 
-        {/* Regional Client Footprint: Tanzania, Kenya, Uganda, Rwanda, Burundi, South Sudan */}
+        {/* Regional Client Footprint: Tanzania, Kenya, Uganda, Rwanda */}
         <ClientFootprintSection
           onOpenBooking={handleOpenBooking}
         />

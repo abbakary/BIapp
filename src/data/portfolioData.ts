@@ -11,7 +11,7 @@ import imgHrAnalytics from '../assets/images/hr_analytics_powerbi_dashboard_1787
 export const PERSONAL_INFO = {
   name: "Mohamed Kido",
   title: "Business Intelligence Expert",
-  tagline: "Empowering enterprises across East Africa (Tanzania, Kenya, Uganda, Rwanda, Burundi, South Sudan) and globally with advanced Power BI analytics, Kimball star-schema data modeling, automated ETL pipelines, and executive intelligence.",
+  tagline: "Empowering enterprises across East Africa (Tanzania, Kenya, Uganda, Rwanda) and globally with advanced Power BI analytics, Kimball star-schema data modeling, automated ETL pipelines, and executive intelligence.",
   email: "kidomoody@gmail.com",
   phone: "+255 693 380 817",
   whatsapp: "+255693380817",
@@ -37,8 +37,6 @@ export const CLIENT_REGIONS_SUMMARY = [
   { name: "Kenya", flag: "🇰🇪", role: "Client Region", code: "KE", capital: "Nairobi / Mombasa", projects: "16+" },
   { name: "Uganda", flag: "🇺🇬", role: "Client Region", code: "UG", capital: "Kampala / Jinja", projects: "11+" },
   { name: "Rwanda", flag: "🇷🇼", role: "Client Region", code: "RW", capital: "Kigali", projects: "9+" },
-  { name: "Burundi", flag: "🇧🇮", role: "Client Region", code: "BI", capital: "Bujumbura / Gitega", projects: "6+" },
-  { name: "South Sudan", flag: "🇸🇸", role: "Client Region", code: "SS", capital: "Juba", projects: "5+" },
 ];
 
 export const TOOLKIT = [
@@ -296,20 +294,20 @@ export const PROJECTS: Project[] = [
 export const SERVICE_PACKAGES: ServicePackage[] = [
   {
     id: "core-audit",
-    name: "BI Audit & Performance Optimization",
-    tagline: "Fix slow dashboards, broken DAX formulas, and refresh failures.",
-    duration: "3 – 5 Days",
-    idealFor: "Enterprises with existing Power BI reports that take forever to load, have refresh bottlenecks, or produce inaccurate numbers.",
+    name: "Web & App Development",
+    tagline: "Turn your idea into a live, revenue-generating digital product — fast.",
+    duration: "1 – 6 Weeks",
+    idealFor: "Startups, SMEs, and enterprises ready to launch or modernize a web platform, business app, or customer-facing digital product.",
     features: [
-      "In-depth Semantic Model & VertiPaq memory profile audit",
-      "DAX Studio query plan inspection & bottleneck elimination",
-      "Power Query M step optimization & query folding fix",
-      "Refresh latency reduction (e.g. cutting 45m refresh to < 3m)",
-      "Executive UX makeover on 1 flagship report dashboard",
-      "Detailed diagnostic fix report & screen walkthrough video",
-      "15 days of post-audit technical support"
+      "Custom websites & web apps (React, Next.js, TypeScript)",
+      "Mobile apps for iOS & Android (Flutter / React Native)",
+      "Backend APIs with Laravel, FastAPI & Flask",
+      "Payment systems, auth flows, real-time features & admin panels",
+      "Cloud deployment on Vercel / AWS / GCP with CI/CD pipelines",
+      "Performance-first builds — sub-2s load times, SEO-ready",
+      "30 days of post-launch support & iteration included"
     ],
-    ctaText: "Book BI Audit"
+    ctaText: "Start Your Build"
   },
   {
     id: "full-bi-solution",
@@ -359,7 +357,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "DAX & Performance",
     summary: "Why your visual takes 15 seconds to render and how simple adjustments to CALCULATE, filter contexts, and bi-directional relationships make it instantaneous.",
     content: [
-      "Many developers jump straight into writing complex DAX without considering the VertiPaq storage engine and formula engine mechanics. Here are the 5 biggest bottlenecks:",
+      "Many developers jump straight into writing complex DAX without considering the storage engine and formula engine mechanics. Here are the 5 biggest bottlenecks:",
       "1. Overusing Bi-Directional Relationships: This forces the engine into expensive cross-table scans. Instead, maintain clean 1-to-many single-direction relationships and use CROSSFILTER() inside specific measures only when required.",
       "2. Using FILTER(All(Table)) instead of KEEPFILTERS(): FILTER() forces an iterator loop over every row, while KEEPFILTERS() preserves column indexes and executes in sub-seconds.",
       "3. Calculating Scalars inside Row Contexts without Variables: Always cache expensive calculations with VAR/RETURN blocks to avoid redundant evaluations.",
@@ -380,7 +378,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Data Modeling",
     summary: "Why denormalized flat spreadsheets lead to incorrect totals, slow slicers, and DAX nightmares—and how dimensional modeling saves your projects.",
     content: [
-      "In modern analytics, some data engineers advocate for One Big Table (OBT). But in Power BI, the VertiPaq columnar engine is explicitly engineered around dimensional Star Schemas.",
+      "In modern analytics, some data engineers advocate for One Big Table (OBT). But in Power BI, the columnar storage engine is explicitly engineered around dimensional Star Schemas.",
       "When you flatten everything into a single 50-column table, you destroy dictionary encoding efficiency. A dedicated Fact table with integer keys pointing to lean Dimension tables (Customer, Date, Store, Product) reduces model size by up to 70%.",
       "More importantly, DAX time intelligence functions (like TOTALYTD, DATEADD, SAMEPERIODLASTYEAR) require a dedicated, contiguous Date dimension table to calculate correctly without missing days.",
       "Follow the Kimble methodology: 1 Fact table containing numerical metrics surrounded by pure Dimension tables. Your reports will respond in under 300ms."
@@ -496,7 +494,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: "t3",
-    quote: "Mohamed Kido audited our VertiPaq semantic model and reduced our report refresh time from 58 minutes to 2.4 minutes. His knowledge of Kimball star schemas and DAX calculation engines is exceptional.",
+    quote: "Mohamed Kido audited our Power BI semantic model and reduced our report refresh time from 58 minutes to 2.4 minutes. His knowledge of Kimball star schemas and DAX calculation engines is exceptional.",
     author: "Tariq Al-Mansoor",
     role: "VP of Business Intelligence",
     company: "Zeta Cross-Border Commerce",

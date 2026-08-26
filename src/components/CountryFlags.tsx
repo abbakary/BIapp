@@ -57,28 +57,6 @@ export const CLIENT_COUNTRIES: CountryInfo[] = [
     stats: '9 Executive Suites',
     description: 'Equipping Rwandan enterprises and high-growth startups with modern cloud analytics, star-schema semantic models, and automated financial variance reporting.'
   },
-  {
-    code: 'BI',
-    name: 'Burundi',
-    nativeName: 'Repuburika y\'Uburundi',
-    flagEmoji: '🇧🇮',
-    role: 'Client Region',
-    hub: 'Bujumbura & Gitega',
-    sectors: ['Import/Export Commercial Trading', 'Agribusiness (Coffee & Tea)', 'FMCG Distribution Networks'],
-    stats: '6 Deployed Architectures',
-    description: 'Empowering Burundian commercial groups with automated inventory turnover tracking, commodity price sensitivity DAX models, and cost center allocation.'
-  },
-  {
-    code: 'SS',
-    name: 'South Sudan',
-    nativeName: 'Republic of South Sudan',
-    flagEmoji: '🇸🇸',
-    role: 'Client Region',
-    hub: 'Juba',
-    sectors: ['Cross-Border Logistics', 'Humanitarian & Aid Operations', 'Energy & Fuel Distribution', 'Infrastructure Projects'],
-    stats: '5 Cross-Border Suites',
-    description: 'Delivering resilient supply chain visibility, transit corridor turnaround analytics, and grant expenditure tracking across the Northern corridor.'
-  }
 ];
 
 interface FlagProps {
@@ -200,60 +178,6 @@ export const CountryFlagSVG: React.FC<FlagProps> = ({ countryCode, className = '
                 />
               ))}
             </g>
-          </g>
-        </svg>
-      );
-
-    case 'BI': // Burundi 🇧🇮
-      return (
-        <svg viewBox="0 0 72 48" className={`rounded-xs shadow-2xs ${className}`}>
-          <defs>
-            <clipPath id="bi-clip">
-              <rect width="72" height="48" rx="1.5" />
-            </clipPath>
-          </defs>
-          <g clipPath="url(#bi-clip)">
-            {/* Green top and bottom triangles */}
-            <polygon points="0,0 72,0 36,24" fill="#187c32" />
-            <polygon points="0,48 72,48 36,24" fill="#187c32" />
-            {/* Red left and right triangles */}
-            <polygon points="0,0 0,48 36,24" fill="#c6102e" />
-            <polygon points="72,0 72,48 36,24" fill="#c6102e" />
-            {/* White diagonal saltire (cross) */}
-            <line x1="0" y1="0" x2="72" y2="48" stroke="#ffffff" strokeWidth="4.5" />
-            <line x1="0" y1="48" x2="72" y2="0" stroke="#ffffff" strokeWidth="4.5" />
-            {/* Central white disc */}
-            <circle cx="36" cy="24" r="8" fill="#ffffff" />
-            {/* Three 6-pointed stars arranged in triangle */}
-            <circle cx="36" cy="20.5" r="1.5" fill="#c6102e" stroke="#187c32" strokeWidth="0.4" />
-            <circle cx="33" cy="26" r="1.5" fill="#c6102e" stroke="#187c32" strokeWidth="0.4" />
-            <circle cx="39" cy="26" r="1.5" fill="#c6102e" stroke="#187c32" strokeWidth="0.4" />
-          </g>
-        </svg>
-      );
-
-    case 'SS': // South Sudan 🇸🇸
-      return (
-        <svg viewBox="0 0 72 48" className={`rounded-xs shadow-2xs ${className}`}>
-          <defs>
-            <clipPath id="ss-clip">
-              <rect width="72" height="48" rx="1.5" />
-            </clipPath>
-          </defs>
-          <g clipPath="url(#ss-clip)">
-            {/* Horizontal stripes: Black, White, Red, White, Green */}
-            <rect y="0" width="72" height="14" fill="#000000" />
-            <rect y="14" width="72" height="3" fill="#ffffff" />
-            <rect y="17" width="72" height="14" fill="#da121a" />
-            <rect y="31" width="72" height="3" fill="#ffffff" />
-            <rect y="34" width="72" height="14" fill="#078930" />
-            {/* Blue hoist chevron triangle */}
-            <polygon points="0,0 34,24 0,48" fill="#0f47af" />
-            {/* Yellow five-pointed star in chevron */}
-            <polygon
-              points="12,18 13.5,22 17.5,22 14.5,24.5 15.5,28.5 12,26 8.5,28.5 9.5,24.5 6.5,22 10.5,22"
-              fill="#fcdd09"
-            />
           </g>
         </svg>
       );

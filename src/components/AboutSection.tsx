@@ -20,7 +20,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
           <span className="text-gray-400">Direct senior expertise.</span> I build data tools your leadership will actually open every day.
         </h2>
         <p className="text-base sm:text-lg text-gray-600 mt-4 max-w-3xl leading-relaxed">
-          I'm Mohamed Kido — a dedicated Business Intelligence Expert and enterprise analytics consultant based in <strong className="text-gray-900 font-semibold">Tanzania 🇹🇿</strong>. Over the past 7+ years, I’ve helped enterprises, multi-entity commercial groups, and leadership teams across Tanzania, Kenya, Uganda, Rwanda, Burundi, South Sudan, and globally turn fragmented spreadsheets into automated, high-speed decision engines.
+          I'm Mohamed Kido — a dedicated Business Intelligence Expert and enterprise analytics consultant based in <strong className="text-gray-900 font-semibold">Tanzania 🇹🇿</strong>. Over the past 7+ years, I’ve helped enterprises, multi-entity commercial groups, and leadership teams across Tanzania, Kenya, Uganda, Rwanda, and globally turn fragmented spreadsheets into automated, high-speed decision engines.
         </p>
       </div>
 
@@ -93,7 +93,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
             <div className="flex items-start gap-2 text-xs text-gray-700">
               <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-              <span><strong>Sub-Second DAX:</strong> VertiPaq optimized for instant slice and dice.</span>
+              <span><strong>Sub-Second DAX:</strong> Optimized measures for instant slice and dice.</span>
             </div>
             <div className="flex items-start gap-2 text-xs text-gray-700">
               <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
