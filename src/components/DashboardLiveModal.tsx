@@ -22,7 +22,7 @@ export const DashboardLiveModal: React.FC<DashboardLiveModalProps> = ({ project,
     setActiveSlicer(opt);
     if (opt.includes('Tanzania') || opt.includes('Emergency') || opt.includes('Central') || opt.includes('Outerwear') || opt.includes('Existing')) {
       setMultiplier(1.18);
-    } else if (opt.includes('Rwanda') || opt.includes('Northern') || opt.includes('New') || opt.includes('Cardiology')) {
+    } else if (opt.includes('Northern') || opt.includes('New') || opt.includes('Cardiology')) {
       setMultiplier(0.85);
     } else {
       setMultiplier(1.0);

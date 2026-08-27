@@ -11,7 +11,7 @@ import imgHrAnalytics from '../assets/images/hr_analytics_powerbi_dashboard_1787
 export const PERSONAL_INFO = {
   name: "Mohamed Kido",
   title: "Business Intelligence Expert",
-  tagline: "Empowering enterprises across East Africa (Tanzania, Kenya, Uganda, Rwanda) and globally with advanced Power BI analytics, Kimball star-schema data modeling, automated ETL pipelines, and executive intelligence.",
+  tagline: "Empowering enterprises across East Africa (Tanzania, Kenya, Uganda) and globally with advanced Power BI analytics, Star Schema data modeling, automated ETL pipelines, and executive intelligence.",
   email: "kidomoody@gmail.com",
   phone: "+255 693 380 817",
   whatsapp: "+255693380817",
@@ -23,7 +23,7 @@ export const PERSONAL_INFO = {
   github: "https://github.com",
   location: "Tanzania (HQ Base) · Serving East Africa & Worldwide",
   baseCountry: "Tanzania",
-  profileImage: "/images/profile1.jpeg",
+  profileImage: "/images/profile1.png",
   profileImage2: "/images/profile2.png",
   experienceYears: "7+",
   projectsDelivered: "65+",
@@ -36,7 +36,6 @@ export const CLIENT_REGIONS_SUMMARY = [
   { name: "Tanzania", flag: "🇹🇿", role: "Provider Base", code: "TZ", capital: "Dar es Salaam / Dodoma", projects: "28+" },
   { name: "Kenya", flag: "🇰🇪", role: "Client Region", code: "KE", capital: "Nairobi / Mombasa", projects: "16+" },
   { name: "Uganda", flag: "🇺🇬", role: "Client Region", code: "UG", capital: "Kampala / Jinja", projects: "11+" },
-  { name: "Rwanda", flag: "🇷🇼", role: "Client Region", code: "RW", capital: "Kigali", projects: "9+" },
 ];
 
 export const TOOLKIT = [
@@ -44,7 +43,7 @@ export const TOOLKIT = [
   "Advanced DAX & Tabular Editor",
   "Power Query (M Language)",
   "Microsoft Fabric & Synapse",
-  "Kimball Star Schema Modeling",
+  "Star Schema Modeling",
   "SQL Server & PostgreSQL",
   "Azure Data Factory & ETL",
   "Row-Level Security (RLS)",
@@ -125,7 +124,7 @@ export const PROJECTS: Project[] = [
     ],
     chartType: "supply",
     demoData: {
-      filterOptions: ["All Fleet Routes", "Central Corridor (Dar-Rwanda)", "Northern Corridor (Mombasa-Uganda)", "Southern Feeder Hub", "Port Customs Queue"],
+      filterOptions: ["All Fleet Routes", "Central Corridor (Dar-Uganda)", "Northern Corridor (Mombasa-Uganda)", "Southern Feeder Hub", "Port Customs Queue"],
       defaultFilter: "All Fleet Routes",
       metricSeries: [
         { name: "Mar", value: 59.6, target: 85, secondary: 52.3 },
@@ -294,18 +293,18 @@ export const PROJECTS: Project[] = [
 export const SERVICE_PACKAGES: ServicePackage[] = [
   {
     id: "core-audit",
-    name: "Web & App Development",
-    tagline: "Turn your idea into a live, revenue-generating digital product — fast.",
+    name: "Business Automation",
+    tagline: "Turn your business idea into a working digital product — no tech knowledge needed.",
     duration: "1 – 6 Weeks",
-    idealFor: "Startups, SMEs, and enterprises ready to launch or modernize a web platform, business app, or customer-facing digital product.",
+    idealFor: "Small businesses, startups, and growing companies that want to stop doing things manually and start running on software that works for them automatically.",
     features: [
-      "Custom websites & web apps (React, Next.js, TypeScript)",
-      "Mobile apps for iOS & Android (Flutter / React Native)",
-      "Backend APIs with Laravel, FastAPI & Flask",
-      "Payment systems, auth flows, real-time features & admin panels",
-      "Cloud deployment on Vercel / AWS / GCP with CI/CD pipelines",
-      "Performance-first builds — sub-2s load times, SEO-ready",
-      "30 days of post-launch support & iteration included"
+      "Professional website or online store that attracts and converts customers",
+      "Custom business app — manage orders, staff & inventory from your phone",
+      "Automated workflows replacing manual WhatsApp follow-ups & spreadsheets",
+      "Built with React, Next.js, Laravel, FastAPI & Flutter for reliability",
+      "Payment collection, invoicing & client portals built in",
+      "Works on any device — phone, tablet, or computer, zero installation",
+      "30 days of post-launch support & changes included"
     ],
     ctaText: "Start Your Build"
   },
@@ -317,7 +316,7 @@ export const SERVICE_PACKAGES: ServicePackage[] = [
     idealFor: "Mid-to-large organizations seeking a certified single source of truth across ERP, CRM, SQL, and Excel.",
     popular: true,
     features: [
-      "Custom Kimball Star-Schema dimensional data modeling",
+      "Custom Star Schema dimensional data modeling",
       "Automated ETL pipelines connecting ERPs, SQL, CRM & cloud sources",
       "3 to 5 Interactive executive & operational dashboard views",
       "Granular Row-Level Security (RLS) & department permission groups",
@@ -372,7 +371,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     id: "star-schema-vs-flat-tables",
-    title: "Why Kimball Star Schema Still Outperforms Flat Tables in Modern Power BI",
+    title: "Why Star Schema Still Outperforms Flat Tables in Modern Power BI",
     readTime: "6 min read",
     date: "Jul 2026",
     category: "Data Modeling",
@@ -455,7 +454,7 @@ export const PROCESS_STEPS = [
     step: "02",
     title: "Dimensional Modeling & Automated ETL",
     duration: "Week 1",
-    description: "I construct a high-speed Kimball Star Schema model, write optimized DAX measures, and setup resilient automated refresh pipelines."
+    description: "I construct a high-speed Star Schema model, write optimized DAX measures, and setup resilient automated refresh pipelines."
   },
   {
     step: "03",
@@ -494,7 +493,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: "t3",
-    quote: "Mohamed Kido audited our Power BI semantic model and reduced our report refresh time from 58 minutes to 2.4 minutes. His knowledge of Kimball star schemas and DAX calculation engines is exceptional.",
+    quote: "Mohamed Kido audited our Power BI semantic model and reduced our report refresh time from 58 minutes to 2.4 minutes. His knowledge of star schemas and DAX calculation engines is exceptional.",
     author: "Tariq Al-Mansoor",
     role: "VP of Business Intelligence",
     company: "Zeta Cross-Border Commerce",

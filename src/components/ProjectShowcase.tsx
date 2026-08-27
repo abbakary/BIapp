@@ -54,7 +54,7 @@ export const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({ onOpenLiveDemo
           <span className="text-gray-400">Enterprise solutions.</span> Different industries, one data architect.
         </h2>
         <p className="text-sm sm:text-base text-gray-600 mt-3 max-w-2xl">
-          Every project features custom Kimball Star-Schema data modeling, automated ETL pipelines, sub-second DAX execution, and high-adoption executive UX.
+          Every project features custom Star Schema data modeling, automated ETL pipelines, sub-second DAX execution, and high-adoption executive UX.
         </p>
 
         {/* Filter Pills with Counts */}

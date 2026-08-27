@@ -53,7 +53,7 @@ export default function App() {
           onOpenBooking={handleOpenBooking}
         />
 
-        {/* Regional Client Footprint: Tanzania, Kenya, Uganda, Rwanda */}
+        {/* Regional Client Footprint: Tanzania, Kenya, Uganda */}
         <ClientFootprintSection
           onOpenBooking={handleOpenBooking}
         />
@@ -89,25 +89,6 @@ export default function App() {
       <Footer />
 
       {/* Floating Direct WhatsApp Quick Connect with Real WhatsApp Logo */}
-      <div className="fixed bottom-5 right-5 z-40 flex items-center group">
-        <a
-          href={PERSONAL_INFO.whatsappLink}
-          target="_blank"
-          rel="noreferrer"
-          className="bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold text-xs sm:text-sm pl-3 pr-4 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 flex items-center gap-2 border border-white/20 active:scale-95 group-hover:pr-5"
-          title={`Direct WhatsApp with ${PERSONAL_INFO.name} (${PERSONAL_INFO.whatsappDisplay})`}
-        >
-          <div className="relative">
-            <WhatsAppIcon className="w-5 h-5 fill-white" />
-            <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-emerald-300 rounded-full border border-[#25D366] animate-ping"></span>
-          </div>
-          <span className="hidden sm:inline">WhatsApp Mohamed Kido</span>
-          <span className="sm:hidden">WhatsApp</span>
-          <span className="text-[11px] bg-black/20 px-1.5 py-0.5 rounded-full font-mono text-emerald-100 hidden md:inline">
-            +255 693 380 817
-          </span>
-        </a>
-      </div>
 
       {/* Live Power BI Dashboard Simulation Modal */}
       <DashboardLiveModal

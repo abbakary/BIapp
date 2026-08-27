@@ -20,7 +20,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
           <span className="text-gray-400">Direct senior expertise.</span> I build data tools your leadership will actually open every day.
         </h2>
         <p className="text-base sm:text-lg text-gray-600 mt-4 max-w-3xl leading-relaxed">
-          I'm Mohamed Kido — a dedicated Business Intelligence Expert and enterprise analytics consultant based in <strong className="text-gray-900 font-semibold">Tanzania 🇹🇿</strong>. Over the past 7+ years, I’ve helped enterprises, multi-entity commercial groups, and leadership teams across Tanzania, Kenya, Uganda, Rwanda, and globally turn fragmented spreadsheets into automated, high-speed decision engines.
+          I'm Mohamed Kido — a dedicated Business Intelligence Expert and enterprise analytics consultant based in <strong className="text-gray-900 font-semibold">Tanzania 🇹🇿</strong>. Over the past 7+ years, I’ve helped enterprises, multi-entity commercial groups, and leadership teams across Tanzania, Kenya, Uganda, and globally turn fragmented spreadsheets into automated, high-speed decision engines.
         </p>
       </div>
 

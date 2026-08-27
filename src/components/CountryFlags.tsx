@@ -46,17 +46,6 @@ export const CLIENT_COUNTRIES: CountryInfo[] = [
     stats: '11 Production Models',
     description: 'Designing clinical KPI monitoring, multi-branch revenue intelligence, and grant allocation dashboards with robust Row-Level Security for Ugandan leadership teams.'
   },
-  {
-    code: 'RW',
-    name: 'Rwanda',
-    nativeName: 'Repubulika y\'u Rwanda',
-    flagEmoji: '🇷🇼',
-    role: 'Client Region',
-    hub: 'Kigali Innovation City',
-    sectors: ['Tech & Financial Services', 'Hospitality & Tourism Analytics', 'Government & Public Sector Reporting', 'Agri-Processing'],
-    stats: '9 Executive Suites',
-    description: 'Equipping Rwandan enterprises and high-growth startups with modern cloud analytics, star-schema semantic models, and automated financial variance reporting.'
-  },
 ];
 
 interface FlagProps {
@@ -146,41 +135,8 @@ export const CountryFlagSVG: React.FC<FlagProps> = ({ countryCode, className = '
         </svg>
       );
 
-    case 'RW': // Rwanda 🇷🇼
-      return (
-        <svg viewBox="0 0 72 48" className={`rounded-xs shadow-2xs ${className}`}>
-          <defs>
-            <clipPath id="rw-clip">
-              <rect width="72" height="48" rx="1.5" />
-            </clipPath>
-          </defs>
-          <g clipPath="url(#rw-clip)">
-            {/* Top band: Blue (half height 24) */}
-            <rect y="0" width="72" height="24" fill="#00a1de" />
-            {/* Middle band: Yellow (one quarter 12) */}
-            <rect y="24" width="72" height="12" fill="#fad201" />
-            {/* Bottom band: Green (one quarter 12) */}
-            <rect y="36" width="72" height="12" fill="#20603d" />
-            {/* Golden Sun on upper-right fly with 24 rays */}
-            <g transform="translate(56, 12)">
-              <circle cx="0" cy="0" r="3.5" fill="#e5aa00" />
-              {/* Sun rays */}
-              {[0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330].map((angle) => (
-                <line
-                  key={angle}
-                  x1="0"
-                  y1="-4"
-                  x2="0"
-                  y2="-6"
-                  stroke="#e5aa00"
-                  strokeWidth="0.8"
-                  transform={`rotate(${angle})`}
-                />
-              ))}
-            </g>
-          </g>
-        </svg>
-      );
+    case 'RW': // removed
+      return <span className="text-xs font-mono">{countryCode}</span>;
 
     default:
       return <span className="text-xs font-mono">{countryCode}</span>;

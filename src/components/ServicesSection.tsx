@@ -28,7 +28,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
       description: "Full-cycle analytics implementation: from database connections and automated ETL pipelines to sub-second DAX measures and board-ready Power BI reporting suites.",
       features: [
         "Multi-source data ingestion (SQL, ERP, Shopify, Fabric, CRM)",
-        "Kimball dimensional Star Schema modeling",
+        "Star Schema modeling",
         "Dynamic scenario forecasting & What-If parameter tools",
         "Granular Row-Level Security (RLS) configuration",
         "Automated scheduled refreshes on Power BI Service"
@@ -37,17 +37,17 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
     },
     {
       icon: Code2,
-      title: "Web & App Development",
-      badge: "Full-Stack & Mobile",
-      description: "From idea to live product. We build high-performance websites, web apps, and mobile applications using the latest frameworks — React, Next.js, Laravel, FastAPI, Flask, and Flutter. Clean code, pixel-perfect UIs, and launch-ready in weeks, not months.",
+      title: "Business Automation",
+      badge: "Web & Mobile Apps",
+      description: "Stop doing things manually. We build software that runs your business for you — websites that sell, apps your team actually uses, and systems that handle the repetitive work automatically. No tech background needed to understand or use what we build.",
       features: [
-        "Custom web apps & SaaS platforms (React, Next.js, TypeScript)",
-        "Mobile apps for iOS & Android (Flutter / React Native)",
-        "Backend APIs with Laravel, FastAPI & Flask",
-        "Payment gateways, auth, real-time features & admin dashboards",
-        "Cloud deployment, CI/CD pipelines & performance optimization"
+        "Professional websites & online stores that attract and convert customers",
+        "Custom business apps — manage orders, staff, inventory from your phone",
+        "Automated workflows that replace manual WhatsApp follow-ups & spreadsheets",
+        "Payment collection, invoicing & client portals built in",
+        "Works on any device — phone, tablet, or computer, zero installation"
       ],
-      serviceKey: "Web & App Development"
+      serviceKey: "Business Automation"
     }
   ];
 

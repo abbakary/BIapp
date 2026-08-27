@@ -42,22 +42,22 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose, ini
 
   const availableDates = getAvailableDates();
   const [selectedDate, setSelectedDate] = useState<string>(availableDates[0]?.fullDate || '');
-  const [selectedTime, setSelectedTime] = useState<string>('02:00 PM UTC');
+  const [selectedTime, setSelectedTime] = useState<string>('02:00 PM EAT');
 
   const timeSlots = [
-    '09:00 AM UTC',
-    '10:30 AM UTC',
-    '01:00 PM UTC',
-    '02:30 PM UTC',
-    '04:00 PM UTC',
-    '05:30 PM UTC',
+    '09:00 AM EAT',
+    '10:30 AM EAT',
+    '01:00 PM EAT',
+    '02:30 PM EAT',
+    '04:00 PM EAT',
+    '05:30 PM EAT',
   ];
 
   const serviceOptions = [
     { title: 'Free 30-min Strategy Call', desc: 'Discuss architecture, pain points & project fit (0 cost).' },
     { title: 'Business Intelligence Dashboard Build', desc: 'Scope custom executive dashboards, semantic model & ETL.' },
     { title: 'Corporate Power BI Training Workshop', desc: 'Upskill internal analyst teams with live hands-on modules.' },
-    { title: 'Web & App Development', desc: 'Build a website, web app, or mobile app — from idea to launch.' },
+    { title: 'Web & App Development / Business Automation', desc: 'Build a website, app or automated system — from idea to launch.' },
   ];
 
   const dataStackOptions = [
@@ -473,7 +473,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose, ini
 
             <div>
               <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">
-                3. Choose Time Slot (UTC)
+                3. Choose Time Slot (EAT)
               </label>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                 {timeSlots.map((time) => (

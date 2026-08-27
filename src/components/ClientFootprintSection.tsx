@@ -25,7 +25,7 @@ export const ClientFootprintSection: React.FC<ClientFootprintSectionProps> = ({ 
           <span className="text-gray-400">Headquartered in Tanzania.</span> Empowering organizations across the East African Community.
         </h2>
         <p className="text-base sm:text-lg text-gray-600 mt-4 max-w-3xl leading-relaxed">
-          From high-growth commercial enterprises in Dar es Salaam and Arusha to market leaders across Nairobi, Mombasa, Kampala, and Kigali, Mohamed Kido builds localized, secure, and production-grade Power BI architectures tailored to East African trade corridors and business dynamics.
+          From high-growth commercial enterprises in Dar es Salaam and Arusha to market leaders across Nairobi, Mombasa, and Kampala, Mohamed Kido builds localized, secure, and production-grade Power BI architectures tailored to East African trade corridors and business dynamics.
         </p>
       </div>
 
@@ -166,7 +166,7 @@ export const ClientFootprintSection: React.FC<ClientFootprintSectionProps> = ({ 
             </div>
             <div className="flex justify-between items-center py-2">
               <span className="text-gray-500">Regional Coverage</span>
-              <span className="font-semibold text-gray-900">Tanzania, Kenya, Uganda, Rwanda</span>
+              <span className="font-semibold text-gray-900">Tanzania, Kenya, Uganda</span>
             </div>
           </div>
 
